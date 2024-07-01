@@ -31,5 +31,6 @@ jobs:
 
     - name: Compile and run tests
       run: |
-        javac -cp .:junit5/* src/EmployeeTest.java src/Employee.java
-        java -jar junit5/junit-platform-console-standalone-1.7.0.jar -cp . --select-class=EmployeeTest
+        mkdir -p bin
+        javac -d bin -cp .:junit5/* src/EmployeeTest.java src/Employee.java
+        java -jar junit5/junit-platform-console-standalone-1.7.0.jar -cp bin --select-class=EmployeeTest
