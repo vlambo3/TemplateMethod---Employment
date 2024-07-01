@@ -1,3 +1,7 @@
+<div>
+    <p><a href="https://github.com/vlambo3/TemplateMethod---Employment"><img src="https://github.com/vlambo3/TemplateMethod---Employment/workflows/Test/badge.svg"></a>
+</div>
+
 ## Explanation of the Program in the Main Branch
 
 Our program is responsible for managing employee salary liquidation. To accomplish this task, we follow a specific process involving three key steps:
