@@ -8,20 +8,20 @@ class EmployeeTest {
 
     private Employee effectiveEmployee;
     private Employee contractorEmployee;
-    private Employee.Calculate.CalculateEffective calculateEffective;
-    private Employee.Calculate.CalculateContractor calculateContractor;
+    private CalculateEffective calculateEffective;
+    private CalculateContractor calculateContractor;
     private Employee effectiveEmployeeException;
     private Employee contractorEmployeeException;
 
     @BeforeEach
     void setUp() {
-        effectiveEmployee = new Employee.Effective("Juan", "Perez", "aaa111", 400d, 40d, 60d);
-        contractorEmployee = new Employee.Contractor("Juan", "Perez", "aaa111", 201d, 40d);
-        calculateEffective = new Employee.Calculate.CalculateEffective();
-        calculateContractor = new Employee.Calculate.CalculateContractor();
+        effectiveEmployee = new Effective("Juan", "Perez", "aaa111", 400d, 40d, 60d);
+        contractorEmployee = new Contractor("Juan", "Perez", "aaa111", 201d, 40d);
+        calculateEffective = new CalculateEffective();
+        calculateContractor = new CalculateContractor();
 
-        effectiveEmployeeException = new Employee.Effective("Juan", "Perez", "123456", 1000.0, 2000.0, 50.0);
-        contractorEmployeeException = new Employee.Contractor("Pompilia", "Pompini", "654321", -10.0, 100.0);
+        effectiveEmployeeException = new Effective("Juan", "Perez", "123456", 1000.0, 2000.0, 50.0);
+        contractorEmployeeException = new Contractor("Pompilia", "Pompini", "654321", -10.0, 100.0);
 
     }
 
