@@ -21,7 +21,7 @@ public abstract class Calculate extends RuntimeException {
         response = "La liquidación generada es: " + paycheck + " Saldo a liquidar: " + sueldo;
 
         //deposito solo porque lo pide el enunciado
-        String payment = depositarSueldo(employee);
+        String payment = paySalary(employee);
 
         return response;
     }
@@ -35,7 +35,7 @@ public abstract class Calculate extends RuntimeException {
     protected abstract String sendPaycheck(Employee employee);
 
     //3 depositarlo
-    private String depositarSueldo(Employee employee) {
+    private String paySalary(Employee employee) {
         return "Se depositó a la cuenta de: " + employee.getAccountNumber();
     }
 }
